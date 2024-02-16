@@ -38,12 +38,19 @@ class quizTest02{
 public class quiz02 {
 	public static void main(String[] args) {
 		int k=100, e=90, m=80;
-		
 		quizTest02 qu= new quizTest02();
-		qu.setKor(100);
-		qu.setEng(90);
-		qu.setMath(80);
+		
+		qu.setKor(k);
+		qu.setEng(e);
+		qu.setMath(m);
+		qu.setSum(k+e+m);
+		qu.setAvg(qu.getSum()/3.0);
+		
 		System.out.println("국어 : "+qu.getKor());
+		System.out.println("영어 : "+qu.getEng());
+		System.out.println("수학 : "+qu.getMath());
+		System.out.println("합계 : "+qu.getSum());
+		System.out.println("평균 : "+qu.getAvg());
 	}
 
 }
